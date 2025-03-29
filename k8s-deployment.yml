@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: my-app
-          image: maheshmu/flipkart1:latest  # Change to your actual image
+          image: maheshmu/flipkart1:v1  # Change to your actual image
           ports:
             - containerPort: 8091  # This should match the port your Docker container exposes
 ---
