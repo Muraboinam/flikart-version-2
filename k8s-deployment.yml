@@ -16,7 +16,7 @@ spec:
         - name: my-app
           image: maheshmu/flipkart1:v1  # Change to your actual image
           ports:
-            - containerPort: 8091  # This should match the port your Docker container exposes
+            - containerPort: 80  # This should match the port your Docker container exposes
 ---
 apiVersion: v1
 kind: Service
@@ -29,5 +29,5 @@ spec:
   ports:
     - protocol: TCP
       port: 8088        # External port (Kubernetes Service port)
-      targetPort: 8091  # Internal port (Your Docker container's exposed port)
+      targetPort: 80  # Internal port (Your Docker container's exposed port)
        
